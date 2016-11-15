@@ -1,0 +1,18 @@
+{
+  "name": "neutronium-vue-command-mixin",
+  "version": "1.0.0",
+  "description": "Vue mixin to integrate MVVM ICommand with vue.js",
+  "main": "index.js",
+  "keywords": [
+    "vue.js",
+    "Neutronium",
+    "command"
+  ],
+  "author": "David",
+  "license": "MIT",
+  "homepage": "https://github.com/David-Desmaisons/neutronium-vue-command-mixin#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/David-Desmaisons/neutronium-vue-command-mixin.git"
+  }
+}

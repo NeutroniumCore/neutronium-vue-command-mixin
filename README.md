@@ -32,7 +32,7 @@ True if Command CanExecute is true.
 Call the corresponding command with the argument `arg`
 
 
-Example usage (using semantic ui):
+Example usage, declaring buttoncommand component in a .vue file (using semantic ui):
  
 ```javascript
 <template>
@@ -53,13 +53,10 @@ export default {
 </style>
 ```
 
-
+Using buttoncommand:
 
 ```javascript
 <buttoncommand :command="compute">
 	Submit
 </buttoncommand> 
-```
-
-
 ```

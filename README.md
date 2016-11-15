@@ -63,3 +63,9 @@ Using buttoncommand:
 	Submit
 </buttoncommand> 
 ```
+
+
+Install using npm:
+```bash
+npm install neutronium-vue-command-mixin --save
+```

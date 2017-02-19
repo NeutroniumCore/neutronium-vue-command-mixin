@@ -11,7 +11,7 @@ Component this mixin exposes:
 
 ### Props
 #### command
-Type: `Array`<br>
+Type: `Object`<br>
 Required: `true`<br>
 
 The C# command.

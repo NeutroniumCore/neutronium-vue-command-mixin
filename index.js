@@ -1,11 +1,14 @@
 const commandMixin = {
 	props: {
 		command: {
-			type: Object,
-			required: true
+			required: true,
+			validator: function (value) {
+        		return typeof value === 'object'
+      		}
 		},
 		arg: {
 			type: Object,
+			required: false,
 			default: null
 		}
     },

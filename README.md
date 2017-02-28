@@ -58,7 +58,7 @@ export default {
 Using buttoncommand:
 
 ```javascript
-<buttoncommand :command="compute">
+<buttoncommand :command="compute" :arg="argument">
 	Submit
 </buttoncommand> 
 ```

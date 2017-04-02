@@ -10,9 +10,9 @@
   ],
   "author": "David",
   "license": "MIT",
-  "homepage": "https://github.com/David-Desmaisons/neutronium-vue-command-mixin#readme",
+  "homepage": "https://github.com/NeutroniumCore/neutronium-vue-command-mixin#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/David-Desmaisons/neutronium-vue-command-mixin.git"
+    "url": "https://github.com/NeutroniumCore/neutronium-vue-command-mixin.git"
   }
 }

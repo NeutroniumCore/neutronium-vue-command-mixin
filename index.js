@@ -3,16 +3,16 @@ const commandMixin = {
 		command: {
 			required: true,
 			validator: function (value) {
-        		return typeof value === 'object'
-      		}
+				return typeof value === 'object'
+			}
 		},
 		arg: {
 			type: Object,
 			required: false,
 			default: null
 		}
-    },
-    computed: {
+	},
+	computed: {
 		canExecute: function () {
 			if (this.command === null)
 				return false;
@@ -33,14 +33,20 @@ const commandMixin = {
 				this.command.CanExecute(this.arg);
 		},
 		execute: function () {
-			if (this.canExecute) {
-				var beforeCb = this.beforeCommand;
-				if (!!beforeCb)
-					beforeCb();
-				this.command.Execute(this.arg);
+			if (!this.canExecute) {
+				return
 			}
+			const arg = this.arg
+			const evt = {arg: arg, cancel: false}
+			this.$emit('beforeExecute', evt)
+
+			if (evt.cancel) {
+				return
+			}
+			this.command.Execute(arg);
+			this.$emit('afterExecute', arg)
 		}
 	}
-  };
+};
 
-  export default commandMixin
+export default commandMixin

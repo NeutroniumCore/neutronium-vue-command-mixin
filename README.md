@@ -4,6 +4,7 @@ Mixin to integrate MVVM ICommand with vue
 
 [![Npm version](https://img.shields.io/npm/v/neutronium-vue-command-mixin.svg?maxAge=2592000)](https://www.npmjs.com/package/neutronium-vue-command-mixin)
 [![MIT License](https://img.shields.io/github/license/David-Desmaisons/neutronium-vue-command-mixin.svg)](https://github.com/David-Desmaisons/neutronium-vue-command-mixin/blob/master/LICENSE)
+[![Npm version](https://img.shields.io/npm/v/neutronium-vue-command-mixin.svg?maxAge=2592000)](https://www.npmjs.com/package/neutronium-vue-command-mixin)
 
 ## Usage
 Provide mixin to easily integrate ICommand in vue.js using Neutronium.
@@ -51,7 +52,6 @@ export default {
 </script>
 
 <style>
-@import '~dist/semantic.css';
 </style>
 ```
 

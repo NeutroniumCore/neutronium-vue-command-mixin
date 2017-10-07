@@ -21,15 +21,15 @@ const commandMixin = {
 	},
 	watch: {
 		'command.CanExecuteCount': function () {
-			!this.computeCanExecute || this.computeCanExecute();
+			this.computeCanExecute();
 		},
 		arg: function () {
-			!this.computeCanExecute || this.computeCanExecute();
+			this.computeCanExecute();
 		}
 	},
 	methods: {
 		computeCanExecute: function () {
-			if (this.command !== null)
+			if ((this.command !== null) && (this.command.hasOwnProperty('CanExecute')))
 				this.command.CanExecute(this.arg);
 		},
 		execute: function () {

@@ -1,6 +1,6 @@
 {
   "name": "neutronium-vue-command-mixin",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Vue mixin to integrate MVVM ICommand with vue.js",
   "main": "index.js",
   "keywords": [

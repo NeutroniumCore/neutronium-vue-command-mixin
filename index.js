@@ -21,10 +21,10 @@ const commandMixin = {
 	},
 	watch: {
 		'command.CanExecuteCount': function () {
-			this.computeCanExecute();
+			!this.computeCanExecute || this.computeCanExecute();
 		},
 		arg: function () {
-			this.computeCanExecute();
+			!this.computeCanExecute || this.computeCanExecute();
 		}
 	},
 	methods: {

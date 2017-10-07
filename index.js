@@ -7,7 +7,6 @@ const commandMixin = {
 			}
 		},
 		arg: {
-			type: Object,
 			required: false,
 			default: null
 		}
